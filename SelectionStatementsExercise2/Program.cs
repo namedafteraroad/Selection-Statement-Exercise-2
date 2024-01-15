@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
+            //var subject and takes userinput 
             Console.WriteLine("What is your favorite subject in school");
             var subject = Console.ReadLine();
-
+            //switch adds to lower, makes all letters lowercase
             switch (subject.ToLower())
             {
                 case "math":
@@ -24,8 +25,9 @@
                 case "geography":
                     Console.WriteLine("the study of the ground we inhabit, hello");
                     break;
+                //anything not stated as a case will default to the default
                 default:
-                    Console.WriteLine("Please pick another subjecti!");
+                    Console.WriteLine("Please pick another subject!");
                     break;
             }
         }
